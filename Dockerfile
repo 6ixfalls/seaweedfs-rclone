@@ -9,7 +9,7 @@ RUN \
 RUN ./rclone version
 
 # Begin final image
-FROM chrislusf/seaweedfs:3.57
+FROM chrislusf/seaweedfs:3.58
 
 RUN apk --no-cache add ca-certificates fuse3 tzdata && \
   echo "user_allow_other" >> /etc/fuse.conf
